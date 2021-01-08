@@ -1,4 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 151px auto;
+  grid-template-rows: 100px calc(100vh - 100px);
+`;
 
 export default createGlobalStyle`
   * {

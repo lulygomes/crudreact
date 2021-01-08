@@ -1,16 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import GlobalStyles from './styles/global';
+import GlobalStyles, { Grid } from './styles/global';
 
 import Header from './components/Header';
 import Routes from './routes';
+import Nav from './components/Nav';
 
 const App: React.FC = () => (
   <Router>
-    <Header />
-    <Routes />
-    <GlobalStyles />
+    <Grid>
+      <Header />
+      <Nav />
+      <Routes />
+      <GlobalStyles />
+    </Grid>
   </Router>
 );
 
