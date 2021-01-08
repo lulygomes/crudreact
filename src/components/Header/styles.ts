@@ -15,7 +15,11 @@ export const Container = styled.header`
 export const Logo = styled.div`
   background-color: #111;
   height: 100px;
+  width: 225px;
   padding: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     margin: 5px;
