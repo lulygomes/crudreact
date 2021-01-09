@@ -1,34 +1,34 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import { Container, NavList, NavIten } from './styles';
+import { Container, NavList, NavItem } from './styles';
 
 const Nav: React.FC = () => {
   return (
     <Container>
       <NavList>
-        <NavIten>
+        <NavItem>
           <Link to="/">
-            <FaHome /> Item 1
+            <FaHome /> Início
           </Link>
-        </NavIten>
-        <NavIten>
-          <a href="/">
-            <FaHome /> Item 2
-          </a>
-        </NavIten>
-        <NavIten>
+        </NavItem>
+        <NavItem>
+          <Link to="/clients">
+            <FaUsers /> Clientes
+          </Link>
+        </NavItem>
+        <NavItem>
           <a href="/">
             <FaHome /> Item 3
           </a>
-        </NavIten>
-        <NavIten>
+        </NavItem>
+        <NavItem>
           <a href="/">
             <FaHome /> Item 4
           </a>
-        </NavIten>
+        </NavItem>
       </NavList>
     </Container>
   );
