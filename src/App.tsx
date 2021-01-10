@@ -7,13 +7,17 @@ import Header from './components/Header';
 import Routes from './routes';
 import Nav from './components/Nav';
 
+import { HeaderProvider } from './context/HeaderContext';
+
 const App: React.FC = () => (
   <Router>
     <Grid>
-      <Header />
-      <Nav />
-      <Routes />
-      <GlobalStyles />
+      <HeaderProvider>
+        <Header />
+        <Nav />
+        <Routes />
+        <GlobalStyles />
+      </HeaderProvider>
     </Grid>
   </Router>
 );
