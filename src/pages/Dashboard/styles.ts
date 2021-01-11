@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   background-color: #fdfdfd;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.68);
 `;
 
 export const Content = styled.section`

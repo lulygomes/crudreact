@@ -8,7 +8,7 @@ export const Container = styled.header`
   color: #232129;
   height: 100px;
   width: 100%;
-  box-shadow: 0px 5px 17px 0px #533894;
+  box-shadow: 0px 0px 16px 1px #533894;
 
   display: flex;
 `;
