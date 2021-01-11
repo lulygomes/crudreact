@@ -8,7 +8,15 @@ export const Container = styled.main`
 
 export const Form = styled.form`
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   margin: 20px;
+
+  div {
+    margin-left: 8px;
+    max-height: 220px;
+
+    h3 {
+      margin-bottom: 15px;
+    }
+  }
 `;

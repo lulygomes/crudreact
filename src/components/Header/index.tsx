@@ -7,6 +7,7 @@ import { Container, Logo, Content } from './styles';
 
 const Header: React.FC = () => {
   const { headerProps } = useContext(HeaderContext);
+  // const { icon: Icon } = headerProps;
 
   return (
     <Container>

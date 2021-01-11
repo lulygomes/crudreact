@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useCallback, useState } from 'react';
+import { IconBaseProps } from 'react-icons';
 
 interface headerPorpsData {
   title: string;
   subTitle: string;
-  icon: string;
+  icon: React.ComponentType<IconBaseProps>;
 }
 
 interface HeaderContextData {

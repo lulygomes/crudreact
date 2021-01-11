@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { FaHome } from 'react-icons/fa';
 import { HeaderContext } from '../../context/HeaderContext';
 
 import { Container, Content } from './styles';
@@ -10,7 +11,7 @@ const Dashboard: React.FC = () => {
     updateHeader({
       title: 'Início',
       subTitle: 'um sistema',
-      icon: 'home',
+      icon: FaHome,
     });
   }, [updateHeader]);
 
