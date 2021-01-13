@@ -9,7 +9,6 @@ export const Container = styled.div`
   color: #f4f4f4;
   padding: 10px;
   margin: 8px;
-  flex-grow: 1;
 
   svg {
     margin: 4px;
